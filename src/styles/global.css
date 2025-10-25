@@ -1,0 +1,43 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main Container */
+.weather-app {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
+  padding: 2rem 1rem;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: 2rem;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .weather-app {
+    padding: 1rem 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .weather-app {
+    padding: 1rem 0.5rem;
+  }
+}

@@ -1,0 +1,136 @@
+/* Weather Display Styles */
+.weather-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Current Weather */
+.current-weather {
+  background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  color: white;
+}
+
+.weather-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.city-name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.country {
+  color: #bfdbfe;
+  font-size: 1rem;
+}
+
+.unit-toggle {
+  padding: 0.5rem 0.75rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: background 0.2s;
+}
+
+.unit-toggle:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Weather Main */
+.weather-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.temp-display {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  margin-bottom: 0.25rem;
+}
+
+.feels-like {
+  color: #bfdbfe;
+}
+
+.weather-icon {
+  font-size: 6rem;
+  line-height: 1;
+}
+
+/* Weather Details */
+.weather-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.detail-item {
+  text-align: center;
+}
+
+.detail-label {
+  color: #bfdbfe;
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+}
+
+.detail-value {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .weather-main {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .temp-display {
+    font-size: 3rem;
+  }
+
+  .weather-icon {
+    font-size: 4rem;
+    margin-top: 1rem;
+  }
+
+  .city-name {
+    font-size: 2rem;
+  }
+
+  .weather-details {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .current-weather {
+    padding: 1rem;
+  }
+
+  .temp-display {
+    font-size: 2.5rem;
+  }
+}
